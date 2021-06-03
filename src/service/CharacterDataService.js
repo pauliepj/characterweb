@@ -8,6 +8,7 @@ class CharacterDataService {
     retrieveAllCharacters(name) {
         return axios.get(`${GENERAL_API_URL}/character`);
     }
+    
 }
 
 export default new CharacterDataService;

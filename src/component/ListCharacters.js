@@ -34,7 +34,8 @@ class ListCharactersComponent extends Component{
                     <table className="table">
                         <thead>
                             <tr>
-                                <th>Id</th>
+                                <th>Character Id</th>
+                                <th>User Id </th>
                                 <th>Name</th>
                                 <th>Experience Points</th>
                                 <th>Gold</th>
@@ -46,6 +47,7 @@ class ListCharactersComponent extends Component{
                                     character =>
                                     <tr key={character.characterId}>
                                         <td>{character.characterId}</td>
+                                        <td>{character.userId}</td>
                                         <td>{character.characterName}</td>
                                         <td>{character.expPoints}</td>
                                         <td>{character.gold}</td>
